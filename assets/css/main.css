@@ -1,0 +1,5 @@
+@media (min-width: 100px) and (max-width: 550px) {
+  .modal-content {
+    margin-left: 0px;
+  }
+}
