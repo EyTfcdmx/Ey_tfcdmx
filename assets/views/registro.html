@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+</head>
+  <body>
+    <section class="container">
+      <div class="row">
+        <form class="col s12" id="registroNuevoUsuario">
+          <a href="login.html"><img src="../img/EY-logo-li.png" alt="" class="responsive-img col s3 offset-s5"></a>
+          <article class="col s10 offset-s1">
+            <div class="row">
+              <div class="input-field col s12 m6 l6">
+                <input id="nombre" type="text" class="validate" required>
+                <label >Nombre(s)</label>
+              </div>
+              <div class="input-field col s12 m6 l6">
+                <input id="apellidos" type="text" class="validate" required>
+                <label >Apellidos</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" required>
+                <label >Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input  id="contrasena" class="col s12" type="password" name="pass1" autofocus="autofocus" min="6" max="10"/>
+                <label >Contraseña</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input class="col s12" type="password" name="pass2" min="6" max="10" autofocus="autofocus"/>
+                <label for="confirmPasword">Confirmar contraseña</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="direccion" type="text" class="validate" required>
+                <label>Dirección</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <select required="" aria-required="true" id="estado">
+                  <option value="" disabled selected>Estado</option>
+                  <option value="Aguascalientes">Aguascalientes</option>
+                  <option value="Baja California">Baja California</option>
+                  <option value="Baja California Sur">Baja California Sur</option>
+                  <option value="Campeche">Campeche</option>
+                  <option value="Chiapas">Chiapas</option>
+                  <option value="Chihuahua">Chihuahua</option>
+                  <option value="Coahuila de Zaragoza">Coahuila de Zaragoza</option>
+                  <option value="Colima">Colima</option>
+                  <option value="9">Distrito Federal</option>
+                  <option value="10">Durango</option>
+                  <option value="11">Estado de México</option>
+                  <option value="12">Guanajuato</option>
+                  <option value="13">Guerrero</option>
+                  <option value="14">Hidalgo</option>
+                  <option value="15">Jalisco</option>
+                  <option value="16">Michoacán de Ocampo</option>
+                  <option value="17">Morelos</option>
+                  <option value="18">Nayarit</option>
+                  <option value="19">Nuevo León</option>
+                  <option value="20">Oaxaca</option>
+                  <option value="21">Puebla</option>
+                  <option value="22">Querétaro</option>
+                  <option value="23">Quintana Roo</option>
+                  <option value="24">San Luis Potosí</option>
+                  <option value="25">Sinaloa</option>
+                  <option value="26">Sonora</option>
+                  <option value="27">Tabasco</option>
+                  <option value="28">Tamaulipas</option>
+                  <option value="29">Tlaxcala</option>
+                  <option value="30">Veracruz</option>
+                  <option value="31">Yucatán</option>
+                  <option value="32">Zacatecas</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-field col s12 center">
+              <button class="btn waves-effect waves-light yellow" type="submit" name="action" onclick="location.href = 'perfil.html'"/>Registrarse</button>
+            </div>
+          </article>
+        </form>
+      </div>
+    </section
+
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="../js/registro.js"></script>
+  </body>
+</html>
