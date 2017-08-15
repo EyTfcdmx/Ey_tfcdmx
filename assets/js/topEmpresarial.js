@@ -98,8 +98,6 @@
     	console.log(this.value)
     })
 
-
-
     var cambioDeGraficasRecompensas = function (e) {
     	//	document.getElementById("CenaX2")
 
