@@ -4,75 +4,122 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Sacramento|Clicker+Script|Poiret+One|Dancing+Script|Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--link sweetalerts-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
   </head>
   <body>
-  <!-- seccion menu horizontal-->
+    <!-- seccion menu horizontal-->
     <nav class="white">
       <div class="container">
-        <div class="nav-wrapper">
-          <a href="../index.html" class="left align brand-logo hide-on-med-only   hide-on-small-only"><i class="logo" style="color:#c62828">Logo</i></a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" style="color:#c62828">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="red-text darken-3" href="aboutMe.html">hola</a></li>
-            <li><a class="red-text darken-3" href="habilidades.html">hola</a></li>
-            <li><a class="red-text darken-3" href="proyectos.html">hola</a></li>
-            <!-- seccion menu mobile -->
-          </ul>
-          <ul class="side-nav text-red darken-3" id="mobile-demo">
-            <li><a class="red-text" href="aboutMe.html">hola</a></li>
-            <li><a class="red-text" href="habilidades.html">hola</a></li>
-            <li><a class="red-text" href="proyectos.html">hola</a></li>
-          </ul>
-          <a href="../index.html" class="right align brand-logo hide-on-large-only"><i class="logocolor" style="color:#c62828">logo</i></a>
+        <div class="row">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="right align brand-logo "><i class="logo" style="color:#c62828">Logo</i></a>
+            <ul id="slide-out" class="side-nav center">
+              <li>
+                <div class="user-view">
+                  <div class="background"><img class="" src="https://i.hipertextual.com/2017/03/22/ae4e8ea160ca9b2eba3ec1d480ece45c.md.jpg" alt="" /></div>
+                  <a href="perfil.html"><img class="responsive-img circle imagenPerfil" src="https://lh3.googleusercontent.com/-W2XryVdi-lA/U6tSAh3SsbI/AAAAAAAAFGY/ZHJiUEcR_Zs/w480-h480/avatar%2Bmaterial%2Bdesign.png"></a>
+                    <a href="#!name"><span class="white-text center name">John Doe</span></a>
+                  <div class="center">
+                    <i class="fa fa-star fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <i class="fa fa-star fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <i class="fa fa-star fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <i class="fa fa-star fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <i class="fa fa-star-half-o fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <h6>6324 Puntos</h6>
+                  </div>
+                </div>
+              </li>
+              <li><a href="recompensas.html">Recompensas</a></li>
+              <!-- <li><div class="divider"></div></li> -->
+              <li><a href="wishlist.html">Wishlist</a></li>
+              <li><a href="topEmpresarial.html">TOP</a></li>
+              <li><a href="Historial.html">Historial</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="../index.html">Cerrar Sesión</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse left show-on-large"><i class="material-icons" style="color:#c62828">menu</i></a>
+          </div>
         </div>
       </div>
     </nav>
-
+    <!-- seccion de perfil -->
     <section>
-    <div class="row">
-      <div class="col s12 m12 l12">
+     <div class="row">
+     	<div class="col s11 m11"></div>
+     	<div class="col s1 m1">
 
-        <div class="col s4 offset-s4">
-          <img class="circle responsive-img" src="https://lh3.googleusercontent.com/-W2XryVdi-lA/U6tSAh3SsbI/AAAAAAAAFGY/ZHJiUEcR_Zs/w480-h480/avatar%2Bmaterial%2Bdesign.png" alt="" />
-        </div>
-
-        <div class="row">
-
-          <div class="col s12 m12 l12">
-            <h4 class="card-title black-text center-align">Gibrán Hernández</h4>
-            <h5 class="card-title black-text center-align">Socio Premium</h5>
-
-            <div class="center">
-              <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
-              <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
-              <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
-              <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
-              <i class="fa fa-star-half-o fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+     		<span id="notificacion"class="new badge" data-badge-caption="custom caption">4</span>
+     	</div>
+     </div>
+      <div class="row">
+        <div class="col s12 m12 l12 spacio">
+          <div class="col s8 offset-s2 m4 offset-m4 l4 offset-l4">
+            <img class="circle responsive-img" src="https://lh3.googleusercontent.com/-W2XryVdi-lA/U6tSAh3SsbI/AAAAAAAAFGY/ZHJiUEcR_Zs/w480-h480/avatar%2Bmaterial%2Bdesign.png" alt="" />
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <h4 class="card-title black-text center-align">Gibrán Hernández</h4>
+              <h5 class="card-title black-text center-align">Socio Premium</h5>
               <div class="center">
-                <span>6324 Puntos</span>
+                <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <i class="fa fa-star-half-o fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <div class="center">
+                  <h5>6324 Puntos</h5>
+                </div>
+              </div>
+              <div class="col s12 center spacio">
+                <div class="row">
+                  <div class="col s12 m6">
+                    <img class="responsive-img" src="../img/vaso.jpg" alt="">
+                  </div>
+                  <div class="col s12 m6">
+                    <h3><a class="black-text" href="#">Cena para dos</a></h3>
+                    <h5>Encuentra los mejores lugares</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <img class="responsive-img" src="../img/vaso.jpg" alt="">
+                  </div>
+                  <div class="col s12 m6">
+                    <h3><a class="black-text" href="http://ventasalcubo.blogspot.mx/2014/05/historia-de-un-vendedor-exitoso.html?m=1">¡Triplica tus ventas!</a></h3>
+                    <h5>Tips, consejos, herramientas y poderosas técnicas...</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <img class="responsive-img" src="../img/vaso.jpg" alt="">
+                  </div>
+                  <div class="col s12  m6">
+                    <h3><a class="black-text" href="https://www.entrepreneur.com/article/262986">Cómo ser un vendedor exitoso</a></h3>
+                    <h5>Sin clientes no hay negocio. ¿Cómo conquistarlos? Con un plan efectivo y cinco estrategias para vender en tiempos de crisis.</h5>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <img src="" alt="">
-
-            
           </div>
-
         </div>
-
-
       </div>
-    </div>
 
+
+<!--CDN SWEET ALERTS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
   </section>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/materialize.min.js"></script>
       <script type="text/javascript" src="../js/app.js"></script>
+      <script src="../js/perfil.js"></script>
     </body>
     </html>

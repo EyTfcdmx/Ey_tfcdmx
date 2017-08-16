@@ -1,10 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Top Empresarial</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Sacramento|Clicker+Script|Poiret+One|Dancing+Script|Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!-- <link rel="stylesheet" href="../css/style.css"> -->
+	<link rel="stylesheet" href="../css/topEmpresarial.css">
 </head>
+
 <body>
-	
+	<!-- seccion menu horizontal-->
+	<section>
+		<nav class="white">
+      <div class="container">
+        <div class="row">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="right align brand-logo "><i class="logo" style="color:#c62828">Logo</i></a>
+            <ul id="slide-out" class="side-nav center">
+              <li>
+                <div class="user-view">
+                  <div class="background"><img class="" src="https://i.hipertextual.com/2017/03/22/ae4e8ea160ca9b2eba3ec1d480ece45c.md.jpg" alt="" /></div>
+                  <a href="perfil.html"><img class="responsive-img circle imagenPerfil" src="https://lh3.googleusercontent.com/-W2XryVdi-lA/U6tSAh3SsbI/AAAAAAAAFGY/ZHJiUEcR_Zs/w480-h480/avatar%2Bmaterial%2Bdesign.png"></a>
+                    <a href="#!name"><span class="white-text center name">John Doe</span></a>
+                  <div class="center">
+                    <i class="fa fa-star fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <i class="fa fa-star fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <i class="fa fa-star fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <i class="fa fa-star fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <i class="fa fa-star-half-o fa-1x" aria-hidden="true" style="color:#ffff00"></i>
+                    <h6>6324 Puntos</h6>
+                  </div>
+                </div>
+              </li>
+              <li><a href="recompensas.html">Recompensas</a></li>
+              <!-- <li><div class="divider"></div></li> -->
+              <li><a href="wishlist.html">Wishlist</a></li>
+              <li><a href="topEmpresarial.html">TOP</a></li>
+              <li><a href="Historial.html">Historial</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="../index.html">Cerrar Sesión</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse left show-on-large"><i class="material-icons" style="color:#c62828">menu</i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+	</section>
+
+
+	<section id="sectores">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m12">
+					<h4>TOP DE VENTAS POR ZONA</h4>
+					
+					<div id='map'></div>
+					 <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Busca por ZOnas</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li class="zonasMapa" value="1"><a>SUR</a></li>
+    <li class="zonasMapa" value="2"><a >NORTE</a></li>
+    <li class="zonasMapa" value="3"><a >PONIENTE</a></li>
+    <li class="zonasMapa" value="4"><a >CENTRO</a></li>
+    
+  </ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m12">
+					<h4>TOP DE RECOMPENSAS</h4>
+					<div class="row">
+						<div class="col s12">
+							<ul class="tabs">
+								<li class="cambioSkill tab col s3" value="1"><a href="#test1">Enero</a></li>
+								<li class="tab col s3 cambioSkill" value="2"><a href="#test1">Febrero</a></li>
+								<li class="tab col s3 cambioSkill" value="3"><a href="#test1">Marzo</a></li>
+								<li class="tab col s3 cambioSkill" value="4"><a href="#test1">Abril</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="row habilidades">
+								<div id="CenaX2" class="skillbar clearfix " data-percent="70%">
+									<div class="skillbar-title"><span id="porcentajeCine">70%</span>Cine</div>
+									<div class="skillbar-bar blue-grey lighten-5"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="row habilidades">
+								<div id="CenaX3" class="skillbar clearfix " data-percent="50%">
+									<div class="skillbar-title"><span id="porcentajeCena">50%</span>Cena para dos</div>
+									<div class="skillbar-bar blue-grey lighten-5"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m12">
+					<h4>TOP DE VENDEDORES</h4>
+					<table class="responsive-table bordered">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>NOMBRE</th>
+								<th>NUMERO DE EMPLEADO</th>
+							</tr>
+						</thead>
+
+						<tbody id="bodyTabla">
+
+						</tbody>
+
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--LLAVE DE GOOGLE MAPS-->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxkv_t9ylU2W541WDuVruIj34nx8_7-bk&">
+
+
+	</script>
+	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+
+
+	</script>
+
+	<!--JQUERY-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<!--MIS SCRIPTS-->
+	<script type="text/javascript" src="../js/app.js"></script>
+	<script type="text/javascript" src="../js/topEmpresarial.js"></script>
+
 </body>
+
 </html>
