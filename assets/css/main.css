@@ -1,1 +1,13 @@
-
+.wish-image{
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 100px) and (max-width: 550px){
+  .wish-title{
+    text-align: center;
+  }
+  .btn-add, .btn-del{
+    display: block;
+    margin: 0 auto;
+  }
+}
