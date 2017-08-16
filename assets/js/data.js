@@ -100,7 +100,7 @@ function guardarDatos() {
 				'url': "../img/comida2.png"
 			}
 		}
-    });   
+    });
   };
 guardarDatos();
 var cargarPagina = function () {
@@ -209,7 +209,3 @@ var mostrarTarjetas = function (recompensas) {
     var recompensas = snapshot.val();
         mostrarTarjetas(recompensas);
   });
-   
-  
-
-
