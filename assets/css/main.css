@@ -64,7 +64,10 @@ img.asunto{
 .loginSize{
 	width: 40vh;
 }
-
 .btn, .btn-large, .btn-flat{
 	text-transform: capitalize !important;
+}
+.wish-image{
+	width: 200px;
+	height: 200px;
 }
