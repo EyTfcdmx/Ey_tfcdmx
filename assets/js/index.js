@@ -15,7 +15,7 @@ function mostrarModal(){
   showCancelButton: true,
   closeOnConfirm: false,
   animation: "slide-from-top",
-  inputPlaceholder: "NUEMERO EMPLEADO"
+  inputPlaceholder: "NUMERO EMPLEADO"
 },
 function(inputValue){
   if (inputValue === false) return false;
