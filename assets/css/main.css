@@ -1,6 +1,8 @@
+
 .spacio{
   margin-top: 15vh;
 }
+
 .side-nav{
   width: 170px;
 }
@@ -8,4 +10,22 @@
   width: 100px;
   height: 100px;
   margin: 0 auto;
+
+.asunto{
+  margin-top: 3vh;
+}
+.wish-image{
+    display: block;
+    margin: 0 auto;
+  }
+  @media (min-width: 100px) and (max-width: 550px){
+    .wish-title{
+      text-align: center;
+    }
+    .btn-add, .btn-del{
+      display: block;
+      margin: 0 auto;
+    }
+
+
 }
