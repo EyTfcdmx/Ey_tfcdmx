@@ -100,10 +100,8 @@ function guardarDatos() {
 				'url': "../img/comida2.png"
 			}
 		}
-	});
-
-};
-
+    });   
+  };
 guardarDatos();
 var cargarPagina = function () {
 
@@ -207,10 +205,11 @@ var mostrarTarjetas = function (recompensas) {
 };
 
 
+   firebase.database().ref('/recompensas').on('value', function (snapshot) {
+    var recompensas = snapshot.val();
+        mostrarTarjetas(recompensas);
+  });
+   
+  
 
 
-firebase.database().ref('/recompensas').on('value', function (snapshot) {
-	var recompensas = snapshot.val();
-	mostrarTarjetas(recompensas);
-});
-$(document).ready(cargarPagina);
