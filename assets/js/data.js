@@ -134,7 +134,7 @@ var cargarPagina = function(){
         var $btnC = $("<a/>");
        
         
-        $div.addClass("card col xl3 l3 m3 s3");
+        $div.addClass("card col xl3 l3 m3 s12");
         $divI.addClass("card-image waves-effect waves-block waves-light")
         $divCc.addClass("card-content");
         $img.attr("src", source);
