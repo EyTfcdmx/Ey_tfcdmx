@@ -130,6 +130,8 @@ var cargarPagina = function(){
         var $pNom= $("<p/>");
         var $pPts =$("<p/>");
         var $pInf = $("<p/>");
+        var $btnW = $("<a/>");
+        var $btnC = $("<a/>");
        
         
         $div.addClass("card col xl3 l3 m3 s3");
@@ -148,12 +150,16 @@ var cargarPagina = function(){
         $iR.text("close");
         $pNom.text("Nombre:"+ " " + nombre);
         $pPts.text("Valor en Puntos:"+ " "+puntos);
-        $pInf.text("Info:" + " " +info)
+        $pInf.text("Info:" + " " +info);
+        $btnW.addClass("waves-effect waves-light btn-large");
+        $btnW.text("Wish-list");
+        $btnC.addClass("waves-effect waves-light btn-large");
+        $btnC.text("Canjea");
         $span.append($i);
         $spanR.append($iR);
         $divI.append($img);
         $divCc.append($span);
-        $divCr.append($spanR,$pNom, $pPts, $pInf);
+        $divCr.append($spanR,$pNom, $pPts, $pInf, $btnW, $btnC);
         $div.append($divI, $divCc, $divCr)
 
         $contenedor.append($div);
