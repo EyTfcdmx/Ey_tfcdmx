@@ -13,6 +13,9 @@ span.caret{
 .card{
 	height:300px;
 }
+.btn{
+  margin-bottom: 4% !important;
+}
 .modal-overlay{
 	width:650px;
 	height:400px;
@@ -36,10 +39,10 @@ span.caret{
   margin: 0 auto;
 }
 img.asunto{
-  margin-top:2.5vh;
+  margin-top:1.7vh !important;
 }
 .asunto{
-  margin-top: 3vh !important;
+  margin-top: 3vh ;
 
 }
 .wish-image{
