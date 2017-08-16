@@ -2,6 +2,15 @@
 .spacio{
   margin-top: 15vh;
 }
+
+.side-nav{
+  width: 170px;
+}
+.imagenPerfil{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+
 .asunto{
   margin-top: 3vh;
 }
@@ -17,5 +26,6 @@
       display: block;
       margin: 0 auto;
     }
+
 
 }
