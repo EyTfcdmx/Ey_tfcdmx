@@ -73,24 +73,37 @@
 			</div>
 			<div class="">
 				<div class="class s12 center spacio">
-					<h4>Envíanos un Mensaje</h4>
+					<h3>¿Te podemos ayudar en algo?</h3>
+					<h5>Envíanos un mensaje</h5>
 				</div>
 				<div class="row">
 					<form class="col s12">
 						<div class="row">
-							<div class="input-field col s12 m12 l4">
-								<input id="input_text" type="text" data-length="10">
+
+							<div class="input-field col s12 m12 l12">
+								<select required="" aria-required="true" id="asunto">
+									<option value="" disabled selected>Asunto:</option>
+									<option value="lorem1">Lorem ipsum dolor sit amet 1</option>
+									<option value="lorem1">Lorem ipsum dolor sit amet 2</option>
+									<option value="lorem1">Lorem ipsum dolor sit amet 3</option>
+									<option value="lorem1">Lorem ipsum dolor sit amet 4</option>
+									<option value="lorem1">Lorem ipsum dolor sit amet 5</option>
+								</select>
+							</div>
+								<!-- <div class="col s4 m4 l4">
+									<a href="contactoAsunto.html" class="btn white red-text darken-3 btn-medium asunto"></i>Otro...</a>
+								</div> -->
+
+							<div class="input-field col s12 m12 l6">
+								<input id="nombre" type="text" class="validate" required>
 								<label for="input_text">Nombre</label>
 							</div>
-							<div class="input-field col col s12 m12 l4">
-								<input id="input_text" type="text" data-length="10">
+							<div class="input-field col col s12 m12 l6">
+								<input id="email" type="email" class="validate" required>
 								<label for="input_text">Correo</label>
 							</div>
-							<div class="input-field col col s12 m12 l4">
-								<input id="input_text" type="text" data-length="10">
-								<label for="input_text">Asunto</label>
-							</div>
-						</div>
+
+
 						<div class="row">
 							<div class="input-field col s12">
 								<textarea id="textarea1" class=" materialize-textarea" data-length="120"></textarea>
@@ -98,6 +111,9 @@
 							</div>
 						</div>
 
+						<div class="center">
+							<a href="enviandoMail.html" class="btn white red-text darken-3 animated fadeIn btn-medium"></i>Enviar</a>
+						</div>
 					</form>
 				</div>
 			</div>
