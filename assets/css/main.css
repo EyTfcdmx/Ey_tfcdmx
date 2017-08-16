@@ -1,3 +1,21 @@
+.img{
+	width:200px;
+	height:200px;
+}
+.btn-floating.halfway-fab.waves-effect.waves-light.blue{
+	position:absolute;
+	left: 7%;
+	top:80%;
+}
+.card{
+	height:300px;
+}
+.modal-overlay{
+	width:650px;
+	height:400px;
+	margin-top:10%;
+	margin-left:10%;
+}
 
 .spacio{
   margin-top: 13vh;

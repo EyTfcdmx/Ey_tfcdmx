@@ -1,8 +1,6 @@
 // seccion menu
 $( document ).ready(function() {
   $(".button-collapse").sideNav();
-    menuWidth: 20, // Default is 300
-  $('.modal').modal();
   $('select').material_select();
 
 });
