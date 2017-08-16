@@ -95,7 +95,7 @@
  barras()
  var cambioDeGraficasRecompensas = function (e) {
  	//	document.getElementById("CenaX2")
- 	console.log("HOLA MAQUI", this)
+
  	var op = this.value
 
 
@@ -230,3 +230,72 @@
  }
 
  agregarEmpleadostop()
+
+ var zonasMapa = document.getElementsByClassName("zonasMapa")
+
+
+ function agregarEventosZonas() {
+  [].forEach.call(zonasMapa, function (zona) {
+
+ 		zona.addEventListener("click", function(){
+			mostrarZonas(this.value)
+		})
+ 	})
+ }
+
+agregarEventosZonas()
+
+function mostrarZonas(op){
+	
+	switch(op){
+		case 1:
+			initMap(currentPosition = {
+ 		coords: {
+ 			latitude: 19.339094,
+ 			longitude: -99.163433
+ 		}})
+			break;
+		case 2:
+			initMap(currentPosition = {
+ 		coords: {
+ 			latitude: 19.417760, 
+ 			longitude: -99.165137
+ 		}})
+			break;
+		case 3:
+			initMap(currentPosition = {
+ 		coords: {
+ 			latitude: 19.366322, 
+ 			longitude: -99.223233
+ 		}})
+			break;
+		case 4:
+			initMap(currentPosition = {
+ 		coords: {
+ 			latitude: 19.432357, 
+ 			longitude: -99.139724
+ 		}})
+			break;
+			
+			 
+			 
+			 
+			 
+			 
+			 
+			 }
+	
+ 
+}
+//
+// zonasMapa.addEventListener("click", function(){
+//	 
+//	 console.log(this.value)
+//	 initMap(currentPosition = {
+// 		coords: {
+// 			latitude: 19.339094,
+// 			longitude: -99.163433
+//
+// 		}
+// 	})
+// })
