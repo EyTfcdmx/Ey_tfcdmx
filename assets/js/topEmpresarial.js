@@ -207,7 +207,7 @@
  }
 
 
- function renderEmpleados(empleado, contador) {
+ fnction renderEmpleados(empleado, contador) {
  	var $contenedor = $("#bodyTabla")
  	var $tr = $("<tr/>")
  	var $td = $("<td/>")
