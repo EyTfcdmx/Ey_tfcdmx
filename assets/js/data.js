@@ -104,10 +104,6 @@ function guardarDatos() {
   };
 
    guardarDatos();
-var cargarPagina = function(){
-   
-  $(document).on("click", ".btn-floating", mostrarModal);
-} 
 
 
  var mostrarTarjetas= function(recompensas){
@@ -134,7 +130,7 @@ var cargarPagina = function(){
         var $btnC = $("<a/>");
        
         
-        $div.addClass("card col xl3 l3 m3 s3");
+        $div.addClass("card col xl3 l3 m6 s10");
         $divI.addClass("card-image waves-effect waves-block waves-light")
         $divCc.addClass("card-content");
         $img.attr("src", source);
@@ -177,6 +173,5 @@ var cargarPagina = function(){
     var recompensas = snapshot.val();
         mostrarTarjetas(recompensas);
   });
-   $(document).ready(cargarPagina);
-
+   
   

@@ -1,11 +1,14 @@
+
+input.select-dropdown{
+  width:100px !important;
+}
+span.caret{
+  left: 20%;
+}
+
 .img{
 	width:200px;
 	height:200px;
-}
-.btn-floating.halfway-fab.waves-effect.waves-light.blue{
-	position:absolute;
-	left: 7%;
-	top:80%;
 }
 .card{
 	height:300px;
@@ -15,6 +18,9 @@
 	height:400px;
 	margin-top:10%;
 	margin-left:10%;
+}
+.busqueda-rec{
+  margin-left:4%;
 }
 
 .spacio{
@@ -29,8 +35,12 @@
   height: 100px;
   margin: 0 auto;
 }
+img.asunto{
+  margin-top:2.5vh;
+}
 .asunto{
-  margin-top: 3vh;
+  margin-top: 3vh !important;
+
 }
 .wish-image{
     display: block;
