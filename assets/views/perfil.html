@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Sacramento|Clicker+Script|Poiret+One|Dancing+Script|Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--link sweetalerts-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    
   </head>
   <body>
   <!-- seccion menu horizontal-->
@@ -33,46 +35,77 @@
         </div>
       </div>
     </nav>
-
+    <!-- seccion de perfil -->
     <section>
-    <div class="row">
-      <div class="col s12 m12 l12">
-
-        <div class="col s4 offset-s4">
-          <img class="circle responsive-img" src="https://lh3.googleusercontent.com/-W2XryVdi-lA/U6tSAh3SsbI/AAAAAAAAFGY/ZHJiUEcR_Zs/w480-h480/avatar%2Bmaterial%2Bdesign.png" alt="" />
-        </div>
-
-        <div class="row">
-
-          <div class="col s12 m12 l12">
-            <h4 class="card-title black-text center-align">Gibrán Hernández</h4>
-            <h5 class="card-title black-text center-align">Socio Premium</h5>
-
-            <div class="center">
-              <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
-              <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
-              <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
-              <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
-              <i class="fa fa-star-half-o fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+     <div class="row">
+     	<div class="col s11 m11"></div>
+     	<div class="col s1 m1">
+     		
+     		<span id="notificacion"class="new badge" data-badge-caption="custom caption">4</span>
+     	</div>
+     </div>
+      <div class="row">
+        <div class="col s12 m12 l12 spacio">
+          <div class="col s8 offset-s2 m4 offset-m4 l4 offset-l4">
+            <img class="circle responsive-img" src="https://lh3.googleusercontent.com/-W2XryVdi-lA/U6tSAh3SsbI/AAAAAAAAFGY/ZHJiUEcR_Zs/w480-h480/avatar%2Bmaterial%2Bdesign.png" alt="" />
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <h4 class="card-title black-text center-align">Gibrán Hernández</h4>
+              <h5 class="card-title black-text center-align">Socio Premium</h5>
               <div class="center">
-                <span>6324 Puntos</span>
+                <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <i class="fa fa-star fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <i class="fa fa-star-half-o fa-2x" aria-hidden="true" style="color:#ffff00"></i>
+                <div class="center">
+                  <h5>6324 Puntos</h5>
+                </div>
+              </div>
+              <div class="col s12 center spacio">
+                <div class="row">
+                  <div class="col s12 m6">
+                    <img class="responsive-img" src="../img/vaso.jpg" alt="">
+                  </div>
+                  <div class="col s12 m6">
+                    <h3><a class="black-text" href="#">Cena para dos</a></h3>
+                    <h5>Encuentra los mejores lugares</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <img class="responsive-img" src="../img/vaso.jpg" alt="">
+                  </div>
+                  <div class="col s12 m6">
+                    <h3><a class="black-text" href="http://ventasalcubo.blogspot.mx/2014/05/historia-de-un-vendedor-exitoso.html?m=1">¡Triplica tus ventas!</a></h3>
+                    <h5>Tips, consejos, herramientas y poderosas técnicas...</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <img class="responsive-img" src="../img/vaso.jpg" alt="">
+                  </div>
+                  <div class="col s12  m6">
+                    <h3><a class="black-text" href="https://www.entrepreneur.com/article/262986">Cómo ser un vendedor exitoso</a></h3>
+                    <h5>Sin clientes no hay negocio. ¿Cómo conquistarlos? Con un plan efectivo y cinco estrategias para vender en tiempos de crisis.</h5>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <img src="" alt="">
-
-            
           </div>
-
         </div>
-
-
       </div>
-    </div>
 
+
+<!--CDN SWEET ALERTS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
   </section>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/materialize.min.js"></script>
       <script type="text/javascript" src="../js/app.js"></script>
+      <script src="../js/perfil.js"></script>
     </body>
     </html>
