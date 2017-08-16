@@ -68,6 +68,7 @@
 
       ]
 
+ var contador = 1;
 
 
  function obtainGeolocation() {
@@ -94,25 +95,26 @@
  barras()
  var cambioDeGraficasRecompensas = function (e) {
  	//	document.getElementById("CenaX2")
+ 	console.log("HOLA MAQUI", this)
  	var op = this.value
 
 
  	switch (op) {
  		case 1:
  			agregarPorcentajeCine("70%")
-			agregarPorcentajeCena("10%")
+ 			agregarPorcentajeCena("10%")
  			break;
  		case 2:
  			agregarPorcentajeCine("60%")
-			agregarPorcentajeCena("80%")
+ 			agregarPorcentajeCena("80%")
  			break;
  		case 3:
  			agregarPorcentajeCine("20%")
-			agregarPorcentajeCena("25%")
+ 			agregarPorcentajeCena("25%")
  			break;
  		case 4:
  			agregarPorcentajeCine("40%")
-			agregarPorcentajeCena("60%")
+ 			agregarPorcentajeCena("60%")
  			break;
  		default:
 
@@ -124,7 +126,7 @@
 
  function agregarEventosACeldas() {
   [].forEach.call(celdas, function (celda) {
- 		
+
  		celda.addEventListener("click", cambioDeGraficasRecompensas)
  	})
  }
@@ -148,3 +150,83 @@
  	barras()
  	$("#porcentajeCena").html(porcentaje)
  }
+
+ function agregarEmpleadostop() {
+ 	var empleados = [
+ 		{
+ 			nombre: "Alma",
+ 			apellido: "Perez Sanches",
+ 			id_empleado: "0001245"
+		},
+ 		{
+ 			nombre: "Juan",
+ 			apellido: "Torres Galvan",
+ 			id_empleado: "0001246"
+		},
+ 		{
+ 			nombre: "Jesus",
+ 			apellido: "Lopez Mora",
+ 			id_empleado: "0001247"
+		},
+ 		{
+ 			nombre: "Georgina",
+ 			apellido: "Perez Perez",
+ 			id_empleado: "0001248"
+		},
+ 		{
+ 			nombre: "Angelica",
+ 			apellido: "Muñoz Ramos",
+ 			id_empleado: "0001249"
+		},
+ 		{
+ 			nombre: "Juana",
+ 			apellido: "Ramos Ramirez",
+ 			id_empleado: "0001250"
+		},
+ 		{
+ 			nombre: "Alma",
+ 			apellido: "Sanchez Ledesma",
+ 			id_empleado: "0001251"
+		},
+
+
+	]
+
+
+ 	empleados.forEach(function (empleado) {
+ 		renderEmpleados(empleado, contador)
+ 		contador++;
+
+ 	})
+
+ 	renderEmpleados(empleado = {
+ 		nombre: "Juan",
+ 		apellido: "Torres",
+ 		id_empleado: "0001895"
+ 	}, 115)
+ }
+
+
+ function renderEmpleados(empleado, contador) {
+ 	var $contenedor = $("#bodyTabla")
+ 	var $tr = $("<tr/>")
+ 	var $td = $("<td/>")
+ 	var $td2 = $("<td/>")
+ 	var $td3 = $("<td/>")
+
+
+ 	var nombre = empleado.nombre;
+ 	var apellido = empleado.apellido;
+ 	var numerodeEmpleado = empleado.id_empleado;
+
+ 	$td.html(contador)
+ 	$td2.html(nombre + " " + apellido)
+ 	$td3.html(numerodeEmpleado)
+
+ 	$tr.append($td)
+ 	$tr.append($td2)
+ 	$tr.append($td3)
+ 	$contenedor.append($tr)
+ }
+
+ agregarEmpleadostop()
