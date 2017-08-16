@@ -8,14 +8,14 @@
 	display: block;
 	margin-bottom: 3vh;
 	width: 100%;
-	background: pink;
+	background:  #4db6ac;
 	height: 6vh;
 	border-radius: 3px;
 }
 
 .skillbar-title {
 	position: absolute;
-	color: #34495e;
+	color: #4db6ac;
 	top: 0;
 	left: 0;
 	width: 23vh;
@@ -46,5 +46,12 @@
 	height: 7vh;
 	line-height: 7vh;
 }
+.tabs .tab a{
+	color: rgba(77, 182, 172, .5);
+	background-color: white;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+	color:gray;
+}
 
-s
+
