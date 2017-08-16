@@ -1,7 +1,11 @@
 .spacio{
   margin-top: 15vh;
 }
-.asunto{
-  margin-top: 3vh;
-
+.side-nav{
+  width: 170px;
+}
+.imagenPerfil{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
