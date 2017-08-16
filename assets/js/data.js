@@ -114,18 +114,23 @@ $(document).on("click", ".canje-list-btn", pasarACANJEAR)
 $(document).on("click", ".whish-list-btn", pasarAwhishlist)
 
 function pasarACANJEAR() {
+	
+	
 	swal({
 			title: "¿Quieres cambiar tus puntos por éste artículo?",
 			text: "Recuerda que todos los artículos están sujetos a condiciones ",
 			type: "success",
-			showCancelButton: true,
-			confirmButtonColor: "#DD6B55",
-			confirmButtonText: "Sí, Lo quiero!",
+			showCancelButton: "true",
+			confirmButtonColor: "#1de9b6",
+			confirmButtonText: "SI, LO QUIERO",
+			cancelButtonText: "Cancelar",
 			closeOnConfirm: false
 		},
 		function () {
 			swal("Listo.", "Se agrego éste evento a tu lista de deseos", "success");
 		});
+
+	
 }
 
 function pasarAwhishlist() {
@@ -196,6 +201,8 @@ var mostrarTarjetas = function (recompensas) {
 		$divCr.append($spanR, $pNom, $pPts, $pInf, $btnW, $btnC);
 		$div.append($divI, $divCc, $divCr)
 
+		
+		
 		$contenedor.append($div);
 
 
