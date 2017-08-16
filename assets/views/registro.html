@@ -10,10 +10,12 @@
   <body>
     <section class="container">
       <div class="row bajar">
-      <a href="login.html" class="right align brand-logo bajar"><img src="../img/logo.png" alt="" ></a>
         <form class="col s12 " id="registroNuevoUsuario">
-          
-          <article class="col s10 offset-s1">
+          <div class="center loginSpacio">
+            <a href="login.html" class="align brand-logo bajar loginSpacio spacio"><img style="margin-top:7vh;" class="center " src="../img/logo.png" alt="" ></a>
+          </div>
+
+          <article class="col s10 offset-s1 spacio">
             <div class="row">
               <div class="input-field col s12 m6 l6">
                 <input id="nombre" type="text" class="validate" required>
@@ -88,15 +90,12 @@
               </div>
             </div>
             <div class="input-field col s12 center">
-              <button class="btn waves-effect waves-light yellow" type="submit" name="action" onclick="location.href = 'perfil.html'"/>Registrarse</button>
+              <button class="btn waves-effect waves-light teal accent-3 teal-text text-darken-3" type="submit" name="action" onclick="location.href = 'perfil.html'"/>Registrarse</button>
             </div>
           </article>
         </form>
       </div>
-    </section
-
-    <footer></footer>
-
+    </section>
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/materialize.min.js"></script>
     <script type="text/javascript" src="../js/registro.js"></script>

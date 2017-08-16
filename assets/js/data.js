@@ -100,7 +100,7 @@ function guardarDatos() {
 				'url': "../img/comida2.png"
 			}
 		}
-    });   
+    });
   };
 guardarDatos();
 var cargarPagina = function () {
@@ -117,8 +117,8 @@ function pasarACANJEAR() {
 	
 	
 	swal({
-			title: "¿QUIERES CANJEAR TUS PUNTOS POR ESTE ARTÍCULO?",
-			text: "Recuerda que todos los artículos estan sujetos a condiciones ",
+			title: "¿Quieres cambiar tus puntos por éste artículo?",
+			text: "Recuerda que todos los artículos están sujetos a condiciones ",
 			type: "success",
 			showCancelButton: "true",
 			confirmButtonColor: "#1de9b6",
@@ -127,7 +127,7 @@ function pasarACANJEAR() {
 			closeOnConfirm: false
 		},
 		function () {
-			swal("LISTO", "ESTE ARTICULO APARECE AHORA PERFIL.", "success");
+			swal("Listo.", "Se agrego éste evento a tu lista de deseos", "success");
 		});
 
 	
@@ -142,7 +142,7 @@ function pasarAwhishlist() {
 	localStorage.setItem("elementoWhishlist", elemento);
 	var elemento2 = localStorage.getItem("elemetoWhislist")
 	console.log(elemento2)
-	swal("LISTO!", "SE AGREGO ESTE EVENTO A TU WISHLIST", "success")
+	swal("Listo!", "Se agrego éste evento a tu lista de deseos", "success")
 }
 
 
@@ -191,7 +191,7 @@ var mostrarTarjetas = function (recompensas) {
 		$pInf.text("Info:" + " " + info);
 		$btnW.addClass("waves-effect waves-light btn-large whish-list-btn");
 		$btnW.attr("data-whishlist", id)
-		$btnW.text("Wish-list");
+		$btnW.text("Deseos");
 		$btnC.addClass("waves-effect waves-light btn-large canje-list-btn");
 		$btnC.text("Canjea");
 		$span.append($i);
@@ -216,7 +216,3 @@ var mostrarTarjetas = function (recompensas) {
     var recompensas = snapshot.val();
         mostrarTarjetas(recompensas);
   });
-   
-  
-
-

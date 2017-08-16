@@ -1,91 +1,91 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>LogIn</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LogIn</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 
-	<!--link sweetalerts-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-</head>
+		<!--link sweetalerts-->
+		<link rel="stylesheet" href="assets/css/materialize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
 
-<body>
+	<body>
 
-	<div class="container">
-		<div class="row">
-			<div class="center col s12 m12">
-				<h4>INGRESA CON</h4>
+		<div class="container center loginSpacio">
+			<div class="logo">
+				<a href="#" class="align brand-logo"><img class="loginSize" src="assets/img/logo.png" alt=""></a>
 			</div>
-		</div>
-		<div class="row">
-			<div class="center col s12 m12">
 
-				<a class="waves-effect waves-light btn btn-large btn_inicio" id="btnF">FACEBOOK</a>
+			<div class="row">
+				<div class="col s12">
+					<h5 class="black-text asunto">Iniciar sesión</h5>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="center col s12 m12">
-				<a class="waves-effect waves-light btn btn-large" id="btnC" href="#modal1">CORREO </a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="center col s12 m12">
-				<h4>O REGISTRATE</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="center col s12 m12">
-				<a class="waves-effect waves-light btn btn-large" id="btnC" href="#modal1">CREA NUEVA CUENTA </a>
-			</div>
-		</div>
-	</div>
 
-
-	<!-- Modal Structure -->
-	<div id="modal1" class="modal">
-		<div class="modal-content">
-			<form class="col s12">
-
+			<div class="container">
 				<div class="row">
-					<div class="input-field col s12">
-						<input id="email" type="email" class="validate">
-						<label for="email">Email</label>
+					<div class="input-field col s10 offset-s1">
+						<input id="email" type="email" class="validate" required>
+						<label for="input_text">Correo electrónico</label>
+					</div>
+					<div class="input-field col s10 offset-s1">
+						<input  id="contrasena" class="col s12" type="password" name="pass1" autofocus="autofocus" min="6" max="10"/>
+						<label >Contraseña</label>
 					</div>
 				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<input id="password" type="password" class="validate">
-						<label for="password">Password</label>
-					</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col s6 offset-s1 m8 offset-m2">
+					<a class="waves-effect waves-light btn loginSize" id="btnC" href="assets/views/perfil.html"><i class="fa fa-paper-plane fa-1x left" aria-hidden="true" style="color:white"></i>Continuar </a>
 				</div>
+			</div>
 
 
-			</form>
+			<div class="row">
+				<div class="col s12 center">
+					<h5 class="grey-text text-darken-3">o regístrate con</h5>
+				</div>
+			</div>
+
+			<div class="row center">
+				<div class="col s6 offset-s1 m8 offset-m2">
+					<a class="waves-effect waves-light btn btn_inicio loginSize" style="background:#3b5998" id="btnF"><i class="fa fa-facebook fa-lg left" aria-hidden="true" style="color:white"></i><span></span>Facebook</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s6 offset-s1 m8 offset-m2">
+					<a class="waves-effect waves-light btn loginSize" id="btnC" href="assets/views/registro.html"><i class="fa fa-envelope-o fa-1x left" aria-hidden="true" style="color:white"></i>Crear una cuenta</a>
+				</div>
+			</div>
+
+
 		</div>
-		<div class="modal-footer">
-			<a href="assets/views/perfil.html" class="modal-action modal-close waves-effect waves-green btn-flat">ENTRAR</a>
-		</div>
-	</div>
 
-	<!--jquery-->
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<!--jquery-->
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 
 
-	<!--CDN SWEET ALERTS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+		<!--CDN SWEET ALERTS-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
 
-	<script type="text/javascript" src="assets/js/registro.js"></script>
-	<script src="assets/js/index.js"></script>
-</body>
+		<script type="text/javascript" src="assets/js/registro.js"></script>
+		<script src="assets/js/index.js"></script>
+	</body>
 
 </html>
