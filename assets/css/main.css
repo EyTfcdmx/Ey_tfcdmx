@@ -55,3 +55,9 @@ img.asunto{
       margin: 0 auto;
     }
 }
+.loginSpacio{
+	margin-top: 6vh;
+}
+.loginSize{
+	width: 40vh;
+}
